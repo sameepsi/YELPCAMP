@@ -51,7 +51,8 @@ app.use(authRoutes);
 app.use("/campgrounds",campgroundRoutes);
 //seeding database
 //seedDb();
+var port=process.env.PORT||3000
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
   console.log("Server started on port 3000!!");
 })
