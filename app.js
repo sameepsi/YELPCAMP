@@ -54,5 +54,5 @@ app.use("/campgrounds",campgroundRoutes);
 var port=process.env.PORT||3000
 
 app.listen(port, (err) => {
-  console.log("Server started on port 3000!!");
+  console.log(`Server started on port ${port}!!);
 })
